@@ -60,8 +60,28 @@ module.exports.createSession = function(req, res){
     return res.redirect('/');
 }
 
-module.exports.destroySession = function(req, res){
-    req.logout();
+// module.exports.destroySession = function(req, res){
+//     req.logout();
 
-    return res.redirect('/');
-}
+//     return res.redirect('/');
+// }
+
+
+
+
+module.exports.destroySession = function(req, res) {
+    req.logout(function(err) {
+      if (err) {
+        // Handle error
+        console.error(err);
+      }
+      // Redirect to the homepage after successful logout
+      return res.redirect('/');
+    });
+  };
+  
+
+
+
+
+
