@@ -24,5 +24,14 @@
     "node-sass-middleware": "^1.0.1",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geniusrks1/codeial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geniusrks1/codeial/issues"
+  },
+  "homepage": "https://github.com/geniusrks1/codeial#readme"
 }
